@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+   <div>
+   	<a href="elseifTest?param1=tiger&param2=lion">elseif로 이동</a>
+   </div>
+   <div>
+   	<a th:href="@{/elseifTest(param1='tiger',param2='lion')}">elseif로 이동2(파라미터 전달)</a>
+   </div>
+   <div>
+   	<a th:href="@{/login(id='tiger',pw='1234')}">로그인</a>
+   </div>
+   <div>
+   	<a href="https://naver.com">네이버로 이동</a>
+   </div>
+</body>
+</html>
